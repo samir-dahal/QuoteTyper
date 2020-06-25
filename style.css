@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #28252d;
+}
+.container{
+    /* background: #f0db4f; */
+    background: #fafafa;
+    padding: 1rem;
+    width: 700px;
+    max-width: 90%;
+    border-radius: .5rem;
+}
+.timer{
+    color: #fafafa;
+    position: absolute;
+    top: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.quote{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.quote-input{
+    padding: .3rem;
+    font-size: 1.5rem;
+    width: 100%;
+}
+.congrats-overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    display: none;
+}
+.result{
+    color: white;
+    line-height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: .1rem;
+}
+.replay{
+    width: 90px;
+    padding: 8px;
+    background: #4d90fe;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+}
+.replay:active{
+    opacity: .7;
+}
+.fa-github{
+    position: absolute;
+    color: white;
+    right: 10px;
+    top: 10px;
+    font-size: 50px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: .2s;
+}
+.fa-github:hover{
+    opacity: .5;
+}
